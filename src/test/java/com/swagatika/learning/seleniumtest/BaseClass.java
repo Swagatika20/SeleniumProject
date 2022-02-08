@@ -13,6 +13,9 @@ public class BaseClass {
 
 	@BeforeMethod
 	public void beforeMethod() {
+		/* As of now downloaded the chrome driver and kept in the lib folder
+		 * Can be enhanced for the automated web driver download by using WebDriverManager
+		 */
 		System.setProperty("webdriver.chrome.driver", "lib/chromedriver");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();

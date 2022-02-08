@@ -7,6 +7,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 //Login Scenario
+/*
+ * Developed the Testcases by using PageFactory  approach,
+ * can also be done using Page Object Model approach
+ */
 public class LoginPage {
 
 	WebDriver driver;

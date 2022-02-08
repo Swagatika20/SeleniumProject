@@ -6,6 +6,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 //Add To Cart Scenario
+/*
+ * Developed the testcases by using PageFactory  approach,
+ * can also be done using Page Object Model approach
+ */
 public class CartPage {
 	WebDriver driver;
 	public CartPage(WebDriver driver) {
