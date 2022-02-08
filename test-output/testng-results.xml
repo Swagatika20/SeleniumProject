@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="34582" started-at="2022-02-08T06:10:27 IST" finished-at="2022-02-08T06:11:02 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="34582" started-at="2022-02-08T06:10:27 IST" finished-at="2022-02-08T06:11:02 IST">
+      <class name="com.swagatika.learning.seleniumtest.EbayMainTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.swagatika.learning.seleniumtest.EbayMainTest@2bbf4b8b]" name="beforeMethod" is-config="true" duration-ms="4075" started-at="2022-02-08T06:10:27 IST" finished-at="2022-02-08T06:10:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="validateEbayTest()[pri:0, instance:com.swagatika.learning.seleniumtest.EbayMainTest@2bbf4b8b]" name="validateEbayTest" duration-ms="30323" started-at="2022-02-08T06:10:32 IST" finished-at="2022-02-08T06:11:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEbayTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.swagatika.learning.seleniumtest.EbayMainTest@2bbf4b8b]" name="afterMethod" is-config="true" duration-ms="115" started-at="2022-02-08T06:11:02 IST" finished-at="2022-02-08T06:11:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.swagatika.learning.seleniumtest.EbayMainTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
