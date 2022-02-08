@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
+//Add To Cart Scenario
 public class EBayAddToCart {
 	WebDriver driver;
     String itemName;

@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
+//Login Scenario
 public class EBayILogin {
 
 	WebDriver driver;
