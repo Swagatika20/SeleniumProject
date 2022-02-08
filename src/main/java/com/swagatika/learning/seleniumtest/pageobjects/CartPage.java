@@ -37,7 +37,6 @@ public class CartPage {
 	public String getItemName() {
 		 return itemNameLoc.getText();
 	}	
-	//@FindBy(xpath = "//a[contains(text(),'Add to cart')]")
 	@FindBy(id = "atc-area")	
 	private WebElement addToCartLoc;
 
