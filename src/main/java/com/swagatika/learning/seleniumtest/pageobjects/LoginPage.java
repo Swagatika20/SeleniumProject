@@ -5,43 +5,39 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
 
 //Login Scenario
-public class EBayILogin {
+public class LoginPage {
 
 	WebDriver driver;
 
-	public EBayILogin(WebDriver driver) {
+	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-
 	}
-
-	@FindBy(xpath = "//A[@title='My eBay']")
-	private WebElement myEbayXpath;
+	@FindBy(xpath = "//a[@title='My eBay']")
+	private WebElement accountDropDownLoc;
 
 	public void mouseOverOnMyEbay() {
-		new Actions(driver).moveToElement(myEbayXpath).build().perform();
+		new Actions(driver).moveToElement(accountDropDownLoc).build().perform();
 	}
-
 	@FindBy(xpath = "//A[contains(text(),'My eBay Summary')]")
-	private WebElement myEbaySummaryXpath;
+	private WebElement myEbaySummaryLoc;
 
 	public void clickOnEbaySummaryLink() {
-		myEbaySummaryXpath.click();
+		myEbaySummaryLoc.click();
 	}
 	@FindBy(xpath = "//button[text()='Continue']")
-	private WebElement continueButtonXpath;
+	private WebElement continueButtonLoc;
 
 	public void clickOnContinue() {
-		continueButtonXpath.click();
+		continueButtonLoc.click();
 	}
-	@FindBy(xpath = "//p[@id='errormsg']")
-	private WebElement errorMsgXath;
+	@FindBy(id = "errormsg")
+	private WebElement errorMsgLoc;
 
-	public void verifyErrorMsg(String errorMsg) {
-		Assert.assertEquals(errorMsg, errorMsgXath.getText(), "Successful");
+	public String getErrorMsg() {
+		return errorMsgLoc.getText();
 	}
 	
 }

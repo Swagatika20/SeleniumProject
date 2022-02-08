@@ -20,13 +20,11 @@ public class BaseClass {
 		driver.manage().timeouts().pageLoadTimeout(45, TimeUnit.SECONDS);
 
 	}
-
 	@AfterMethod
 	public void afterMethod() {
 		driver.quit();
 
 	}
-
 	public void switchWindow(int windownum) {
 		Object[] currentWindow = driver.getWindowHandles().toArray();
 
