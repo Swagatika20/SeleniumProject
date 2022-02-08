@@ -7,11 +7,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-public class EBayInvalidLogin {
+public class EBayILogin {
 
 	WebDriver driver;
 
-	public EBayInvalidLogin(WebDriver driver) {
+	public EBayILogin(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 

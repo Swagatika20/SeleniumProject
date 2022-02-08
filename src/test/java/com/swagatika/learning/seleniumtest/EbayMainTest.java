@@ -4,17 +4,17 @@ package com.swagatika.learning.seleniumtest;
 import org.testng.annotations.Test;
 
 import com.swagatika.learning.seleniumtest.pageobjects.EBayAddToCart;
-import com.swagatika.learning.seleniumtest.pageobjects.EBayInvalidLogin;
+import com.swagatika.learning.seleniumtest.pageobjects.EBayILogin;
 
 
 public class EbayMainTest extends BaseClass{
 	EBayAddToCart ebayAddToCartObj;
-	EBayInvalidLogin ebayInvalidLoginObj;
+	EBayILogin ebayLoginObj;
 
 	@Test
 	public void validateEbayTest() {
 		ebayAddToCartObj= new EBayAddToCart(driver);
-		ebayInvalidLoginObj= new EBayInvalidLogin(driver);
+		ebayLoginObj= new EBayILogin(driver);
 		
 		driver.get("https://www.ebay.com.au/");
 		
@@ -28,10 +28,10 @@ public class EbayMainTest extends BaseClass{
 		ebayAddToCartObj.clickGoToCart();
 		ebayAddToCartObj.verifyIfItemDisplayedInCart();
 		
-		ebayInvalidLoginObj.mouseOverOnMyEbay();
-		ebayInvalidLoginObj.clickOnEbaySummaryLink();
-		ebayInvalidLoginObj.clickOnContinue();
-		ebayInvalidLoginObj.verifyErrorMsg("Oops, that's not a match.");
+		ebayLoginObj.mouseOverOnMyEbay();
+		ebayLoginObj.clickOnEbaySummaryLink();
+		ebayLoginObj.clickOnContinue();
+		ebayLoginObj.verifyErrorMsg("Oops, that's not a match.");
 		
 		
 
